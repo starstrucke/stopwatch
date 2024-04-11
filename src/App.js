@@ -27,7 +27,7 @@ return ()=>{
 const formatTime=(secs)=>{
 let mins=Math.floor(secs/60)
 let remainingsec= secs%60;
-return `${mins}: ${ remainingsec <10 ? "0":""}${remainingsec}`
+return ` ${mins}:${ remainingsec <10 ? "0":""}${remainingsec}`
 }
 const startstop=()=>{
   setIsrunning(!isRunning)
